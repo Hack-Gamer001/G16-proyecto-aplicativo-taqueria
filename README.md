@@ -35,12 +35,14 @@ crear el usuario con super o superusuario o administrador y una contraseña
 
 en el dataconeccion de android studio cambiar estas variables 
 
-<FONT SIZE=6 COLOR="red">E</FONT><FONT SIZE=4>sto es una </FONT>
+--->sqlserver://mssql-157912-0.cloudclusters.net:18171        por el codigo nuevo de cloudcluster
+--->/Taqueria      por la base de datos nueva que creamos
+y la contraseña que se creo antes 
+lo mismo acceder en sql server como conexion remota y las credenciales
 
 public class DatabaseConnection {
 
-private static final String URL = "jdbc:jtds:<span style="color:blue;">sqlserver://mssql-157912-0.cloudclusters.net:18171</span>/<span style="color:green;">Taqueria</span>";
-private static final String USER = "Gremio";
-private static final String PASSWORD = "123qwe123QWE-";
-
+    private static final String URL = "jdbc:jtds:sqlserver://mssql-157912-0.cloudclusters.net:18171/Taqueria";
+    private static final String USER = "Gremio";
+    private static final String PASSWORD = "123qwe123QWE-";
 
