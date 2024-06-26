@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88F18D"
+    tools:context=".ui.Pedido.PedidoFragment">
+    <Spinner
+        android:id="@+id/spinnerClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="621dp"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+        <!-- Agregar el Spinner para seleccionar clientes -->
+
+
+        <TextView
+            android:id="@+id/tvPlato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plato:"
+            android:textColor="#1E5A1F"
+            android:textSize="50sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <CheckBox
+            android:id="@+id/checkBoxTacos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPlato"
+            android:layout_marginTop="8dp"
+            android:text="Tacos"
+            android:textSize="40sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHamburguesas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBoxTacos"
+            android:layout_marginTop="8dp"
+            android:text="Hamburguesas"
+            android:textSize="40sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/checkBoxHamburguesas"
+            android:layout_marginTop="16dp"
+            android:textColor="#1E5A1F" />
+
+        <TextView
+            android:id="@+id/tvDescripcionPlato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBoxHamburguesas"
+            android:layout_marginTop="16dp"
+            android:text="Descripción del Plato:"
+            android:textColor="#1E5A1F" />
+
+        <Spinner
+            android:id="@+id/etDescripcionPlato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDescripcionPlato"
+            android:layout_marginTop="8dp"
+            android:hint="Seleccione el plato" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/etDescripcionPlato"
+            android:layout_marginTop="16dp"
+            android:textColor="#1E5A1F" />
+
+        <TextView
+            android:id="@+id/tvCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etDescripcionPlato"
+            android:layout_marginTop="16dp"
+            android:text="Cantidad:"
+            android:textColor="#1E5A1F" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCantidad"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <!-- Botón de reducción -->
+            <Button
+                android:id="@+id/btnReducir"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-"
+                android:textSize="20sp"
+                android:onClick="reducirCantidad" />
+
+
+            <!-- EditText para la cantidad -->
+            <EditText
+                android:id="@+id/etCantidad"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Cantidad"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:background="@android:color/transparent" />  <!-- Fondo transparente -->
+
+            <!-- Botón de incremento -->
+            <Button
+                android:id="@+id/btnIncrementar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:onClick="incrementarCantidad" />
+
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="47dp"
+                android:text="Ingresar" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

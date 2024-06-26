@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_cliente"
+                android:icon="@drawable/ic_cliente_icon"
+                android:title="Cliente"
+                />
+            <item
+                android:id="@+id/nav_pedido"
+                android:icon="@drawable/ic_pedido_icon"
+                android:title="Pedido" />
+            <item
+                android:id="@+id/nav_lista_pedidos"
+                android:icon="@drawable/ic_lista_pedidos_icon"
+                android:title="Lista de Pedidos" />
+
+            <item
+                android:id="@+id/nav_redes"
+                android:icon="@drawable/bruh"
+                android:title="Redes Sociales" />
+
+            <item
+                android:id="@+id/mapap"
+                android:icon="@drawable/mapa"
+                android:title="Gps" />
+        </group>
+</menu>

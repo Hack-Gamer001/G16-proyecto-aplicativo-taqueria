@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><style name="NavigationViewTextStyle">
+    <item name="android:fontFamily">@font/virgo</item>
+    <item name="android:textSize">16sp</item> <!-- Puedes ajustar el tamaño del texto según tu preferencia -->
+    <!-- Otros atributos de estilo que desees aplicar -->
+</style>
+</resources>

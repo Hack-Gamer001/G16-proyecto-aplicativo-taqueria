@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88F18D"
+    tools:context=".ui.Cliente.ClienteFragment">
+
+    <!-- Contenedor principal -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+        <!-- Elementos de texto y entrada -->
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNombre"
+            android:layout_marginTop="8dp"
+            android:hint="Ingrese el nombre" />
+
+        <TextView
+            android:id="@+id/tvApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etNombre"
+            android:layout_marginTop="16dp"
+            android:text="Apellidos:" />
+
+        <EditText
+            android:id="@+id/etApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvApellidos"
+            android:layout_marginTop="8dp"
+            android:hint="Ingrese los apellidos" />
+
+        <TextView
+            android:id="@+id/tvDNI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etApellidos"
+            android:layout_marginTop="16dp"
+            android:text="DNI:" />
+
+        <EditText
+            android:id="@+id/etDNI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDNI"
+            android:layout_marginTop="8dp"
+            android:hint="Ingrese su DNI" />
+
+        <!-- ImageView para la imagen -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/etDNI"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/taco" />
+
+        <!-- Botón de "Ingresar" -->
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="16dp"
+            android:text="Ingresar"
+            android:layout_centerHorizontal="true"
+
+            android:fontFamily="@font/virgo"/>
+
+        <!-- Botón de "Limpiar" -->
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnIngresar"
+            android:layout_marginTop="16dp"
+        android:text="Limpiar"
+        android:layout_centerHorizontal="true"
+
+            android:fontFamily="@font/virgo"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+

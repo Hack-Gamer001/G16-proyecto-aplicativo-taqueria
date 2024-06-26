@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewClienteID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente ID: "
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewPedidoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido ID: "
+        android:textSize="30sp" />
+
+    <!-- Agregamos nuevas TextViews para Plato, Descripción y Cantidad -->
+    <TextView
+        android:id="@+id/textViewPlato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plato: "
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción: "
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad: "
+        android:textSize="30sp" />
+<Button
+    android:id="@+id/buttonEliminar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Eliminar"
+    android:layout_gravity="end" />
+    <!-- Línea divisoria -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Agregamos un botón -->
+
+
+</LinearLayout>

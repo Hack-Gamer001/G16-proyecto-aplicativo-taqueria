@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#780022"
+    tools:context=".SplashActivity">
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView3"
+        android:layout_width="1500dp"
+        android:layout_height="950dp"
+        android:src="@drawable/sis2"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/negro"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewSistemas2"
+        android:layout_width="510dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="-506dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/spiderman_tobey"
+        android:text="🎮📱💻🖥🦾"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <ImageView
+            android:id="@+id/imageViewlogo"
+            android:layout_width="230dp"
+            android:layout_height="400dp"
+            app:srcCompat="@drawable/siste" />
+
+        <ImageView
+            android:id="@+id/imageViewlogo2"
+            android:layout_width="170dp"
+            android:layout_height="400dp"
+            app:srcCompat="@drawable/uac" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewSistemas"
+        android:layout_width="410dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/cyberpunk"
+        android:text="Bienvenido   a"
+        android:textAlignment="center"
+        android:textColor="#DD9400"
+        android:textSize="45sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/cyberpunk"
+        android:text="Ingenieria    de Sistemas"
+        android:textAlignment="center"
+        android:textColor="#0053B8"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSistemas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

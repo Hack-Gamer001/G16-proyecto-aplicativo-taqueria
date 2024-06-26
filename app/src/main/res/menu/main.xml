@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cliente"
+            android:title="Cliente" />
+        <item
+            android:id="@+id/nav_pedido"
+            android:title="Pedido" />
+        <item
+            android:id="@+id/nav_lista_pedidos"
+            android:title="Lista de Pedidos" />
+    </group>
+</menu>

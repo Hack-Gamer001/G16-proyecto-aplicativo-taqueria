@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.pepe.application.ui.Home.homeFragment"
+        android:label="El Barril"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_cliente"
+        android:name="com.pepe.application.ui.Cliente.ClienteFragment"
+        android:label="Registrar Cliente"
+        tools:layout="@layout/fragment_cliente" />
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.pepe.application.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+    <fragment
+        android:id="@+id/nav_lista_pedidos"
+        android:name="com.pepe.application.ui.ListaPedidos.ListaPedidokFragment"
+        android:label="Lista de pedidos"
+        tools:layout="@layout/fragment_lista_pedidok" />
+    <fragment
+        android:id="@+id/nav_pedido"
+        android:name="com.pepe.application.ui.Pedido.PedidoFragment"
+        android:label="Registrar Pedido"
+        tools:layout="@layout/fragment_pedido" />
+
+    <fragment
+        android:id="@+id/nav_redes"
+        android:name="com.pepe.application.ui.Redes.RedesFragment"
+        android:label="Redes sociales"
+        tools:layout="@layout/fragment_redes" />
+
+    <fragment
+        android:id="@+id/nav_sonido"
+        android:name="com.pepe.application.ui.Sonido.SonidoFragment"
+        android:label="Sonidos"
+        tools:layout="@layout/fragment_redes" />
+    <fragment
+        android:id="@+id/nav_gps"
+        android:name="com.pepe.application.ui.Gps.gpsFragment"
+        android:label="Gps"
+        tools:layout="@layout/fragment_redes" />
+    <fragment
+        android:id="@+id/mapap"
+        android:name="com.pepe.application.ui.Gps.mapap"
+        android:label="Mapa de recorrido"
+        tools:layout="@layout/fragment_mapap" />
+</navigation>
