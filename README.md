@@ -23,3 +23,21 @@ aca estan todos los accesos para copiar en android studio
 
 ![image](https://github.com/Hack-Gamer001/G16-proyecto-aplicativo-taqueria/assets/119648000/5e345f34-ae30-4bc9-bb60-7c6a0ce96856)
 
+crear la base de datos y los usuarios o administradores
+
+![image](https://github.com/Hack-Gamer001/G16-proyecto-aplicativo-taqueria/assets/119648000/d282bc58-49bb-4cdc-b7d3-e399ee229bd4)
+
+con esos datos configurar 
+
+![image](https://github.com/Hack-Gamer001/G16-proyecto-aplicativo-taqueria/assets/119648000/d86efdaa-086c-4d4e-88d3-8d42dda1c89a)
+
+crear el usuario con super o superusuario o administrador y una contraseña
+
+en el dataconeccion de android studio cambiar estas variables 
+
+public class DatabaseConnection {
+
+    private static final String URL = "jdbc:jtds:sqlserver://mssql-157912-0.cloudclusters.net:18171/Taqueria";
+    private static final String USER = "Gremio";
+    private static final String PASSWORD = "123qwe123QWE-";
+
